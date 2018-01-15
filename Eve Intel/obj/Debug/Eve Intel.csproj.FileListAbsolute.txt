@@ -13,3 +13,4 @@ d:\gerbster\documents\visual studio 2017\Projects\Eve Intel\Eve Intel\bin\Debug\
 d:\gerbster\documents\visual studio 2017\Projects\Eve Intel\Eve Intel\bin\Debug\Eve Intel.application
 d:\gerbster\documents\visual studio 2017\Projects\Eve Intel\Eve Intel\obj\Debug\Eve Intel.exe.manifest
 d:\gerbster\documents\visual studio 2017\Projects\Eve Intel\Eve Intel\obj\Debug\Eve Intel.application
+d:\gerbster\documents\visual studio 2017\Projects\Eve Intel\Eve Intel\obj\Debug\Eve Intel.csproj.CoreCompileInputs.cache

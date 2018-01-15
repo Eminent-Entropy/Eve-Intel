@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LstItems = new System.Windows.Forms.ListBox();
             this.BtnNew = new System.Windows.Forms.Button();
             this.BtnClose = new System.Windows.Forms.Button();
             this.TxtInfo = new System.Windows.Forms.TextBox();
             this.BtnSave = new System.Windows.Forms.Button();
             this.TxtName = new System.Windows.Forms.TextBox();
+            this.LstItems = new System.Windows.Forms.ListBox();
+            this.BtnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // LstItems
-            // 
-            this.LstItems.FormattingEnabled = true;
-            this.LstItems.Location = new System.Drawing.Point(12, 12);
-            this.LstItems.Name = "LstItems";
-            this.LstItems.Size = new System.Drawing.Size(202, 446);
-            this.LstItems.TabIndex = 0;
-            this.LstItems.SelectedIndexChanged += new System.EventHandler(this.LstItems_SelectedIndexChanged);
             // 
             // BtnNew
             // 
@@ -89,6 +81,26 @@
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(121, 20);
             this.TxtName.TabIndex = 5;
+            this.TxtName.Text = "New_File_Name";
+            // 
+            // LstItems
+            // 
+            this.LstItems.FormattingEnabled = true;
+            this.LstItems.Location = new System.Drawing.Point(12, 12);
+            this.LstItems.Name = "LstItems";
+            this.LstItems.Size = new System.Drawing.Size(202, 446);
+            this.LstItems.TabIndex = 0;
+            this.LstItems.SelectedIndexChanged += new System.EventHandler(this.LstItems_SelectedIndexChanged);
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.Location = new System.Drawing.Point(220, 464);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(85, 23);
+            this.BtnDelete.TabIndex = 6;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // GroupView
             // 
@@ -96,6 +108,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 521);
             this.ControlBox = false;
+            this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.TxtName);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.TxtInfo);
@@ -115,12 +128,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox LstItems;
         private System.Windows.Forms.Button BtnNew;
         private System.Windows.Forms.Button BtnClose;
         private System.Windows.Forms.TextBox TxtInfo;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.ListBox LstItems;
+        private System.Windows.Forms.Button BtnDelete;
     }
 }

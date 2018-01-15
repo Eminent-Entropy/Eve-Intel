@@ -42,6 +42,7 @@ namespace Eve_Intel
             string name = TxtName.Text;
             string newPath = Path.Combine(group, name);
             if (name != "" && !File.Exists(newPath)) File.Create(newPath).Close();
+            else MessageBox.Show("A file with that name already exists");
             refresh();
         }
 
@@ -53,7 +54,7 @@ namespace Eve_Intel
                 File.WriteAllText(activeFile, text);
                 refresh();
             }
-            else MessageBox.Show("error");
+            else MessageBox.Show("no active file");
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
@@ -65,13 +66,25 @@ namespace Eve_Intel
         private void LstItems_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = LstItems.SelectedIndex;
-            if (index > 1)
+            if (index >= 0)
             {
                 string path = Path.Combine(group, LstItems.Items[index].ToString());
                 TxtInfo.Text = File.ReadAllText(path);
                 activeFile = path;
                 refresh();
             }
+            else MessageBox.Show("Selected file does not exist");
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            if (activeFile != "")
+            {
+                string text = TxtInfo.Text;
+                File.Delete(activeFile);
+                refresh();
+            }
+            else MessageBox.Show("no active file");
         }
     }
 }

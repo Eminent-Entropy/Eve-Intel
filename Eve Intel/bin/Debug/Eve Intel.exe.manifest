@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Eve Intel.exe" size="14792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Eve Intel.exe" size="15304">
       <assemblyIdentity name="Eve Intel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qWubMzQekDlsy9SVBcTvBnuHN4nhCW0eiAeECLDdR7k=</dsig:DigestValue>
+        <dsig:DigestValue>QGFwmeFo4N5mVRycG8k9V1lWShLcilIsxS3/ZPeKsOQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
